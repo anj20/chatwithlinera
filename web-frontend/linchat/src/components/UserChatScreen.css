@@ -1,0 +1,67 @@
+:root {
+    font-size: 16px;
+    font-family: 'Open Sans';
+    --text-primary: #b6b6b6;
+    --text-secondary: #ececec;
+    --bg-primary: #23232e;
+    --bg-secondary: #141418;
+    --transition-speed: 600ms;
+}
+
+.ChatsContainer {
+    display: flex;
+
+}
+
+.UserChatBox {
+    position: fixed;
+    top: 20%;
+    left: 38%;
+}
+
+.ActiveChatsSideBar {
+    background-color: lightsalmon;
+    position: fixed;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    transition: width 600ms ease;
+    overflow: scroll;
+    /* To position the labels on the right side */
+}
+
+.ActiveChatsList {
+    display: flex;
+    flex-direction: column;
+}
+
+.ActiveChatsLabel {
+    cursor: pointer;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.Messages {
+    float: left;
+    flex: 1;
+}
+
+.MessagesList {
+    padding: 0;
+    list-style-type: none;
+    display: inline-block;
+}
+
+.UserMessages {
+    background-color: lightblue;
+}
+
+.RecipientMessages {
+    background-color: lightcoral;
+}
+
+.UserLabel {
+    font-weight: bold;
+}
